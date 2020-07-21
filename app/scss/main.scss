@@ -20,6 +20,7 @@ a {
 	color: #ffffff;
 	&:hover {
 		color: #ccc;
+	}
 }
 
 img {
@@ -38,10 +39,15 @@ body {
 	color: #494848;
 }
 
-.container {
-	max-width: 1680px;
-	margin: 0 auto;
-	width: 100%;
-	background-color: #fff;
+#header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #DDDDDD;
+	height: 100px;
+	padding: 0 100px;
+	gap: ;
+	#nav-bar ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
-
