@@ -2,46 +2,58 @@
 @import "fonts";
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
-dl, ol, ul {
-	margin-bottom: 0;
+dl,
+ol,
+ul {
+  margin-bottom: 0;
 }
 
 a {
-	text-decoration: none;
-	color: #ffffff;
-	&:hover {
-		color: #ccc;
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    color: #767676;
+    text-decoration: none;
+  }
 }
 
 img {
-	display: block;
-	width: 100%;
-	margin: 0 auto;
-	max-width: 100%;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 body {
-	background-color: #EEEEEE;
-	font-size: 16px;
-	line-height: 1.6;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: #494848;
+  background-color: #eee;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: #494848;
 }
 
-.container {
-	max-width: 1680px;
-	margin: 0 auto;
-	width: 100%;
-	background-color: #fff;
-}
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #ddd;
+  height: 100px;
+  padding: 0 100px;
+  gap: 20px;
 
+  #nav-bar ul {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+  }
+}
