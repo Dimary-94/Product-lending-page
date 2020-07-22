@@ -52,8 +52,14 @@ body {
   padding: 0 100px;
   gap: 20px;
 
+  .header-logo {
+    max-width: 300px;
+  }
+
   #nav-bar ul {
     display: grid;
-    grid-template-columns: (3, 1fr);
+    grid-template-columns: repeat(3, max-content);
+    justify-content: end;
+    gap: 150px;
   }
 }
