@@ -80,17 +80,17 @@ body {
     padding: 0 100px;
     position: fixed;
     top: 0;
-  
+
     #nav-bar ul {
       display: grid;
       grid-template-columns: repeat(3, max-content);
       justify-content: end;
       gap: 100px;
     }
-  
+
     #nav-bar ul li {
       font-size: 18px;
-    
+
       a {
         padding: 0;
       }
@@ -99,46 +99,46 @@ body {
 
   main {
     padding-top: 120px;
-  
+
     #main-hero {
       display: grid;
       grid-template-rows: repeat(2, max-content);
       justify-content: center;
       text-align: center;
-    
+
       #h1-hero {
         margin-bottom: 20px;
         font-size: 36px;
         font-weight: 700;
       }
-    
+
       #form #email {
         min-width: 300px;
         height: 35px;
         padding: 0 5px;
-      
+
         &:focus {
           box-shadow: 0 0 3px 3px rgba(219,65,65,.72);
         }
       }
-    
+
       .submit-btn {
         margin: 20px 0 40px;
       }
     }
-  
+
     #features {
       margin: 40px 0;
       display: grid;
       grid-template-rows: repeat(3, 1fr);
       gap: 40px;
-    
+
       .box {
         display: grid;
         grid-template-columns: max-content 1fr;
         align-items: center;
         gap: 70px;
-      
+
         .icon {
           min-width: 100px;
           display: flex;
@@ -146,7 +146,7 @@ body {
           align-items: center;
           color: #FF8C00;
         }
-      
+
         .description {
           align-items: center;
         
@@ -155,7 +155,7 @@ body {
             font-weight: 700;
             margin-bottom: 0;
           }
-        
+
           p {
             margin-bottom: 0;
           }
